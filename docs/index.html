@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <header>
+      <h1>Grocery List</h1>
+      <p>of food</p>
+    </header>
+
+    <main>
+      <table>
+        <thead>
+          <tr>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Description</th>
+            <th>Add/Delete</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="quantity" size="5" />
+            </td>
+            <td>
+              <input type="text" id="unitPrice" size="5" />
+            </td>
+            <td>
+              <input type="text" id="description" />
+            </td>
+            <td>
+              <button type="button" id="addItem">Add item</button>
+            </td>
+          </tr>
+        </thead>
+        <tbody id="list"></tbody>
+      </table>
+      Total cost: <span id="totalCost"></span>
+    </main>
+
+    <footer>
+      <p>DGL 113 2025WI Assignment #3</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
